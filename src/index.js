@@ -1,11 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { HooksApp } from './HooksApp';
+import ReactDOM from "react-dom";
+import { CounterApp } from "./components/01_useState/CounterApp";
+// import { HooksApp } from './HooksApp';
 
-
-ReactDOM.render(
-  <React.StrictMode>
-    <HooksApp />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<CounterApp />, document.getElementById("root"));
