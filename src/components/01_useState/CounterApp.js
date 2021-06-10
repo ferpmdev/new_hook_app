@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CounterApp.css";
 
 export const CounterApp = () => {
-  const [state, setCounter] = useState({
+  const [state, setState] = useState({
     counter1: 10,
     counter2: 20,
   });
@@ -17,13 +17,24 @@ export const CounterApp = () => {
       <button
         className="btn btn-primary"
         onClick={() => {
-          setCounter({
+          setState({
             ...state,
             counter1: counter1 + 1,
           });
         }}
       >
-        +1
+        +1 (para el contador 1)
+      </button>
+      <button
+        className="btn btn-secondary m-2"
+        onClick={() => {
+          setState({
+            ...state,
+            counter2: counter2 + 1,
+          });
+        }}
+      >
+        +1 (para el contador 2)
       </button>
     </>
   );
