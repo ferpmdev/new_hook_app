@@ -10,7 +10,7 @@ export const FocusScreen = () => {
   };
   return (
     <div>
-      <h1>FocusScreen</h1>
+      <h1>FocusScreen with change ( for git)</h1>
       <input
         ref={inputRef}
         type="text"
